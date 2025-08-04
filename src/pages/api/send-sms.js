@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     );
 
     await client.messages.create({
-      body: `Hey ${firstName || ""}, thanks for signing up for Eclipse!`,
+      body: `Congrats ${firstName || ""}! You made the cut—you're one of the first 3,000 to get early access to Eclipse, launching exclusively on the App Store in Chicago this July. We'll text you key updates and the download link as soon as we go live!`,
       from: process.env.TWILIO_PHONE_NUMBER,
       to: `+${phone}`,
     });

@@ -124,6 +124,13 @@ export default function Waitlist() {
         setErrors((prevErrors) => ({ ...prevErrors, ...newErrors }));
         return;
       }
+      
+      await addDoc(collection(db, targetCollection), {
+        ...formData,
+        phone: rawPhone,
+        createdAt: serverTimestamp(),
+      });
+  
       // await fetch("/api/send-sms", {
       //   method: "POST",
       //   headers: {
@@ -131,12 +138,7 @@ export default function Waitlist() {
       //   },
       //   body: JSON.stringify({ phone: rawPhone, firstName: formData.firstName }),
       // });
-      await addDoc(collection(db, targetCollection), {
-        ...formData,
-        phone: rawPhone,
-        createdAt: serverTimestamp(),
-      });
-  
+
       setUserLocationType(formData.locationType);
       setFormData({
         phone: "",
@@ -309,7 +311,9 @@ export default function Waitlist() {
             </div>
               {errors.locationType && <p className="text-red-300 text-sm">{errors.locationType}</p>}
             </div>
-
+            <p className="text-xs text-white/70 text-center -mt-2 mb-2 px-2">
+              By signing up, you agree to Eclipse’s <a href="/privacy" className="underline hover:text-white">Privacy Policy. </a> <br></br>We never share your phone number, and you can opt out at any time.
+            </p>
             <button
               type="submit"
               className="w-full font-obv-light backdrop-blur-md bg-[#1D225B] hover:cursor-pointer text-white font-medium py-2 px-4 border border-white/30 rounded-lg"

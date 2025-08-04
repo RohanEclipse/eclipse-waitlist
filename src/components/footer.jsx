@@ -1,4 +1,5 @@
 // components/Footer.tsx
+import Link from 'next/link';
 import { FaInstagram, FaTiktok, FaEnvelope } from 'react-icons/fa6';
 
 export default function Footer() {
@@ -19,7 +20,11 @@ export default function Footer() {
       </div>
 
       <p className="text-sm sm:text-base">hello@theeclipseapp.com</p>
-      <p className="text-xs text-white/60 mt-1">© Eclipse Platforms, Inc.</p>
+      <p className="text-xs text-white/60 mt-1 flex flex-row items-center gap-1">
+      <Link href="/privacy" className="underline hover:text-white/80">Privacy Policy & Terms</Link>
+      <span>| © Eclipse Platforms, Inc.</span>
+      </p>
+        
     </footer>
   );
 }
