@@ -294,7 +294,7 @@ export default function Waitlist() {
             <label className="text-sm font-obv-light text-white mb-1 block">
               Do you live in Chicago or a nearby suburb?
             </label>
-            <div className="flex space-x-4">
+            <div className="flex indent- space-x-4">
               {["Yes", "No"].map((value) => (
                 <label key={value} className="text-white font-obv-light">
                   <input
@@ -312,7 +312,7 @@ export default function Waitlist() {
               {errors.locationType && <p className="text-red-300 text-sm">{errors.locationType}</p>}
             </div>
             <p className="text-xs text-white/70 text-center -mt-2 mb-2 px-2">
-              By signing up, you agree to Eclipse’s <a href="/privacy" className="underline hover:text-white">Privacy Policy. </a> <br></br>We never share your phone number, and you can opt out at any time.
+              By signing up, you agree to receive SMS messages from Eclipse about launch updates, waitlist status, and account notifications. Message and data rates may apply. You can opt out at any time. <br></br>View our <a href="/privacy" className="underline hover:text-white">Privacy Policy. </a> 
             </p>
             <button
               type="submit"
