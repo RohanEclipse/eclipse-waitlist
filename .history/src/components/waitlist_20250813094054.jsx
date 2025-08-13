@@ -312,7 +312,7 @@ export default function Waitlist() {
               {errors.locationType && <p className="text-red-300 text-sm">{errors.locationType}</p>}
             </div>
             <p className="text-xs text-white/70 text-center -mt-2 mb-2 px-2">
-              By signing up, you agree to receive SMS messages from Eclipse about launch updates, waitlist status, and account notifications. Message and data rates may apply. Message frequency varies. You can opt out at any time. View our <a href="/privacy" className="underline hover:text-white">Privacy Policy. </a> 
+              By signing up, you agree to receive SMS messages from Eclipse about launch updates, waitlist status, and account notifications. Message and data rates may apply. Message frequency may vary . You can opt out at any time. <br></br>View our <a href="/privacy" className="underline hover:text-white">Privacy Policy. </a> 
             </p>
             <button
               type="submit"
