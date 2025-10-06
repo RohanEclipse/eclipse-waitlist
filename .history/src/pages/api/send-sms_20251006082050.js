@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     );
 
     await client.messages.create({
-      body: `Congrats ${firstName || ""}! You made the cut-—you're one of the first to get early access to Eclipse, launching exclusively in Chicago on the App Store this Fall. We'll text you key updates and the download link as soon as we go live!`,
+      body: `Congrats ${firstName || ""}! You made the cut—you're one of the first 3,000 to get early access to Eclipse, launching exclusively on the App Store in Chicago this July. We'll text you key updates and the download link as soon as we go live!`,
       messagingServiceSid: process.env.TWILIO_MESSAGING_SERVICE_SID,
       to: `+${phone}`,
     });
