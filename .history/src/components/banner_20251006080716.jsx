@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 export default function ScrollingBanner({
-  text = "Launching Exclusively in Chicago this Fall!  •  Sign up for Early Access  •  ",
+  text = "Launching Exclusively in Chicago this Fall! Sign up for Early Access. ",
   speed = 60, 
 }) {
   return (

@@ -8,15 +8,12 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 const neighborhoods = [
-  "Rodgers Park / Loyola",
   "Lincoln Square / Andersonville",
-  "Lakeview / Wrigley",
+  "Lakeview / Wigley",
   "Lincoln Park / Old Town",
   "Wicker / Bucktown / Logan Square",
-  "Pilsen / Bridgeport",
   "West Loop / Fulton Market",
   "River North / Gold Coast",
-  "The Loop / South Loop",
   "No preference"
 ];
 
@@ -185,7 +182,7 @@ export default function Waitlist() {
               </h2>
               <p className="text-white/80 font-obv-light">
               Thanks for signing up.<br />
-              We'll see you out in Chicago this July!
+              We’ll see you out in Chicago this Fall.
             </p>
             </div>
             
@@ -312,7 +309,7 @@ export default function Waitlist() {
               {errors.locationType && <p className="text-red-300 text-sm">{errors.locationType}</p>}
             </div>
             <p className="text-xs text-white/70 text-center -mt-2 mb-2 px-2">
-              By signing up, you agree to receive SMS messages from Eclipse about launch updates, waitlist status, and account notifications. Message and data rates may apply. Message frequency varies. You can opt out at any time. <br></br>View our <a href="/privacy" className="underline hover:text-white">Privacy Policy. </a> 
+              By signing up, you agree to receive SMS messages from Eclipse about app updates. Message and data rates may apply. Message frequency varies. You can opt out at any time. View our <a href="/privacy" className="underline hover:text-white">Privacy Policy. </a> 
             </p>
             <button
               type="submit"

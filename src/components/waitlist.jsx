@@ -8,15 +8,11 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 const neighborhoods = [
-  "Rodgers Park / Loyola",
-  "Lincoln Square / Andersonville",
   "Lakeview / Wrigley",
   "Lincoln Park / Old Town",
   "Wicker / Bucktown / Logan Square",
-  "Pilsen / Bridgeport",
   "West Loop / Fulton Market",
   "River North / Gold Coast",
-  "The Loop / South Loop",
   "No preference"
 ];
 
@@ -185,7 +181,7 @@ export default function Waitlist() {
               </h2>
               <p className="text-white/80 font-obv-light">
               Thanks for signing up.<br />
-              We'll see you out in Chicago this July!
+              We’ll see you out in Chicago this Fall.
             </p>
             </div>
             
