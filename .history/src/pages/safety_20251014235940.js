@@ -1,30 +1,5 @@
-import Header from "@/components/header";
-import Head from "next/head";
-import Link from "next/link";
-
-export default function Privacy() {
-  return (
-    <>
-      <Head>
-        <title>Privacy Policy & Terms | Eclipse</title>
-      </Head>
-
-      <div
-        className="relative min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/chicago4.JPG')" }}
-      >
-        <Header />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 backdrop-brightness-50 z-0" />
-
-        {/* Content */}
-        <main className="relative z-10 px-6 text-white font-obv-light min-h-screen flex flex-col items-center justify-center gap-8 pb-10">
-          <h1 className="sr-only">Privacy & Terms</h1>
-
-          <div className="w-full lg:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Privacy Policy Card */}
-            <Link
-              href="/pdfs/Eclipse%20Privacy%20Policy.pdf"
+<Link
+              href="/pdfs/Eclipse Safety Resources & FAQ Guide.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="block group focus:outline-none"
@@ -34,11 +9,11 @@ export default function Privacy() {
                            transition transform hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/30
                            focus-visible:ring-2 focus-visible:ring-white/60"
                 role="button"
-                aria-label="Open Privacy Policy PDF in a new tab"
+                aria-label="Open Eclipse Safety PDF in a new tab"
               >
-                <h2 className="text-3xl font-semibold mb-3 font-ekl">Privacy Policy</h2>
+                <h2 className="text-3xl font-semibold mb-3 font-ekl">Eclipse Safety</h2>
                 <p className="text-white/90">
-                  How we collect, use, and protect your data across the Eclipse platform.
+                  Community guidelines, reporting tools, and safety resources.
                 </p>
                 <div className="mt-6 inline-flex items-center text-white/90 group-hover:text-white">
                   <span className="underline">Open PDF</span>
@@ -54,9 +29,32 @@ export default function Privacy() {
               </div>
             </Link>
 
-            {/* Terms of Use Card */}
-            <Link
-              href="/pdfs/Terms%20and%20Conditions%20of%20Use.pdf"
+            import Header from "@/components/header";
+import Head from "next/head";
+import Link from "next/link";
+
+export default function Help() {
+  return (
+    <>
+      <Head>
+        <title>Help | Eclipse</title>
+      </Head>
+
+      <div
+        className="relative min-h-screen bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/chicago4.JPG')" }}
+      >
+        <Header />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 backdrop-brightness-50 z-0" />
+
+        {/* Content */}
+        <main className="relative z-10 px-6 text-white font-obv-light min-h-screen flex flex-col items-center justify-center gap-8 pb-10">
+
+          <div className="w-full lg:w-1/2 grid grid-cols-1 gap-8">
+
+          <Link
+              href="/pdfs/Eclipse Help & FAQ Guide.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="block group focus:outline-none"
@@ -66,11 +64,11 @@ export default function Privacy() {
                            transition transform hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/30
                            focus-visible:ring-2 focus-visible:ring-white/60"
                 role="button"
-                aria-label="Open Terms of Use PDF in a new tab"
+                aria-label="Open Eclipse Help PDF in a new tab"
               >
-                <h2 className="text-3xl font-semibold mb-3 font-ekl">Terms of Use</h2>
+                <h2 className="text-3xl font-semibold mb-3 font-ekl">Eclipse Help</h2>
                 <p className="text-white/90">
-                  Rules for using Eclipse and important legal information.
+                  Quick tips, FAQs, and how-tos for getting started and troubleshooting.
                 </p>
                 <div className="mt-6 inline-flex items-center text-white/90 group-hover:text-white">
                   <span className="underline">Open PDF</span>

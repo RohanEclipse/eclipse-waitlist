@@ -1,8 +1,10 @@
-import Header from "@/components/header";
+
+
+            import Header from "@/components/header";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Help() {
+export default function Safety() {
   return (
     <>
       <Head>

@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Help() {
+export default function Safety() {
   return (
     <>
       <Head>
@@ -23,7 +23,7 @@ export default function Help() {
           <div className="w-full lg:w-1/2 grid grid-cols-1 gap-8">
 
           <Link
-              href="/pdfs/Eclipse Help & FAQ Guide.pdf"
+              href="/pdfs/Eclipse Safety Resources & FAQ Guide.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="block group focus:outline-none"
@@ -33,11 +33,11 @@ export default function Help() {
                            transition transform hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/30
                            focus-visible:ring-2 focus-visible:ring-white/60"
                 role="button"
-                aria-label="Open Eclipse Help PDF in a new tab"
+                aria-label="Open Eclipse Safety PDF in a new tab"
               >
-                <h2 className="text-3xl font-semibold mb-3 font-ekl">Eclipse Help</h2>
+                <h2 className="text-3xl font-semibold mb-3 font-ekl">Eclipse Safety</h2>
                 <p className="text-white/90">
-                  Quick tips, FAQs, and how-tos for getting started and troubleshooting.
+                  Community guidelines, reporting tools, and safety resources.
                 </p>
                 <div className="mt-6 inline-flex items-center text-white/90 group-hover:text-white">
                   <span className="underline">Open PDF</span>
