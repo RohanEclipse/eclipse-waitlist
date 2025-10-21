@@ -27,8 +27,6 @@ export default function Footer() {
             <span> | </span>
 
       <Link href="/contact" className="underline hover:text-white/80">Contact</Link>
-            <span> | </span>
-
       <Link href="/legal" className="underline hover:text-white/80">Privacy Policy & Terms</Link>
 
 

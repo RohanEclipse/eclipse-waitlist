@@ -23,13 +23,9 @@ export default function Footer() {
       <p className="text-xs text-white/60 mt-1 flex flex-row items-center gap-1">
       <Link href="/help" className="underline hover:text-white/80">About</Link>
       <span> | </span>
-      <Link href="/safety" className="underline hover:text-white/80">Safety</Link>
-            <span> | </span>
-
-      <Link href="/contact" className="underline hover:text-white/80">Contact</Link>
-            <span> | </span>
-
-      <Link href="/legal" className="underline hover:text-white/80">Privacy Policy & Terms</Link>
+      <Link href="/safety" className="underline hover:text-white/80">| Safety</Link>
+      <Link href="/contact" className="underline hover:text-white/80">| Contact</Link>
+      <Link href="/legal" className="underline hover:text-white/80">| Privacy Policy & Terms</Link>
 
 
 

@@ -5,12 +5,13 @@ export default function Header() {
     <header className="w-full font-hind text-white relative top-0 left-0 z-50 mb-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center items-center">
         <div className="flex items-baseline flex-row space-x-2">
-          <div className="flex flex-col items-start">
-            <span className="text-5xl font-bold font-ekl text-[#d6dcff] tracking-wider">
-            eclipse
-          </span>
-          </div>
-          
+          <Link href="/">
+            <img
+              src="/eclipse_light.png"
+              alt="Eclipse logo"
+              className="h-8 w-auto"
+            />
+          </Link>
         </div>
       </div>
     </header>
