@@ -181,7 +181,7 @@ export default function Waitlist() {
               </h2>
               <p className="text-white/80 font-obv-light">
               Thanks for signing up.<br />
-              We’ll see you out in Chicago this Fall.
+              We’ll see you out in Chicago this Month!
             </p>
             </div>
             
