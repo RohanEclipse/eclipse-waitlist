@@ -12,8 +12,26 @@ const firebaseConfig = {
   measurementId: "G-NTYL9CWHJR",
 };
 
-const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
-const db = getFirestore(app);
+// Lazy initialization to avoid blocking during build
+let _app = null;
+let _db = null;
+
+function getAppInstance() {
+  if (!_app) {
+    _app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+  }
+  return _app;
+}
+
+function getDbInstance() {
+  if (!_db) {
+    _db = getFirestore(getAppInstance());
+  }
+  return _db;
+}
+
+const app = getAppInstance();
+const db = getDbInstance();
 
 // Only initialize analytics if window exists (client side)
 let analytics = null;
