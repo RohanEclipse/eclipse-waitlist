@@ -6,10 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "node -e \"const fs = require('fs'); const path = require('path'); const dir = '.next'; if (fs.existsSync(dir)) { fs.rmSync(dir, { recursive: true, force: true }); console.log('Cleaned .next directory'); } else { console.log('.next directory does not exist'); }\"",
+    "clean:all": "node -e \"const fs = require('fs'); const dirs = ['.next', 'node_modules/.cache']; dirs.forEach(d => { if (fs.existsSync(d)) { fs.rmSync(d, { recursive: true, force: true }); console.log(`Cleaned ${d}`); } });\""
   },
   "dependencies": {
     "firebase": "^11.7.3",
+    "firebase-admin": "^13.6.0",
     "framer-motion": "^12.12.1",
     "next": "15.3.8",
     "react": "^19.0.0",
